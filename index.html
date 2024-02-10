@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Generate Random Password 2</title>
+</head>
+<body>
+    <div id="container">
+    <h1>Generate a</h1>
+    <h2>random password</h2>
+    <p>Never use an insecure password again.</p>
+    <form>
+        <label for="passw-length">Password length:</label>
+        <input id="passw-length" type="number" min="7" max="15">
+        <label for="passw-symbols">Select:</label>
+        <select id="passw-symbols">
+            <option>Letters</option>
+            <option>Numbers</option>
+            <option>Symbols</option>
+            <option>All</option>
+        </select>
+    </form>
+    
+    <button id="generate-btn">Generate passwords</button>
+    <hr>
+    <button id="passw1-btn"></button>
+    <button id="passw2-btn"></button>
+
+    <button id="copypassw1" class="secondaryButtons" onclick="copyPassw(passw1El)">Copy to Clipboard</button>
+    <button id="copypassw2" class="secondaryButtons" onclick="copyPassw(passw2El)">Copy to Clipboard</button>
+    <button id="reset" class="resetButton" onclick="reset()">Reset</button>
+    </div>
+
+
+    <script src="main.js">
+
+
+
+
+    </script>
+</body>
+</html>
